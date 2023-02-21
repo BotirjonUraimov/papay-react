@@ -2,7 +2,17 @@ import React from "react";
 import "../css/App.css";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { RippleBadge } from "./MaterialTheme/styled";
+import Users from "./components/users";
+import Dishes from "./components/Dishes";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import RestaurantPage from "./screens/RestaurantPage";
+import CommunityPage from "./screens/CommunityPage";
+import OrderPage from "./screens/OrdersPage";
+import MemberPage from "./screens/MemberPage";
+import HelpPage from "./screens/HelpPage";
+import LoginPage from "./screens/LoginPage";
+import HomePage from "./screens/HomePage";
 
 function App() {
   return (
@@ -11,13 +21,25 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/restaurant">RestaurantPage</Link>
             </li>
             <li>
-              <Link to="/Dishes">Dishes</Link>
+              <Link to="/community">CommunityPage</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/orders">OrderPage</Link>
+            </li>
+            <li>
+              <Link to="/member-page">MemberPage</Link>
+            </li>
+            <li>
+              <Link to="/help">HelpPage</Link>
+            </li>
+            <li>
+              <Link to="/login">LoginPage</Link>
+            </li>
+            <li>
+              <Link to="/">HomePage</Link>
             </li>
           </ul>
         </nav>
@@ -25,14 +47,26 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Dishes">
-            <Dishes />
+          <Route path="/restaurant">
+            <RestaurantPage />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/community">
+            <CommunityPage />
           </Route>
-          <Route path="">
-            <Home />
+          <Route path="/orders">
+            <OrderPage />
+          </Route>
+          <Route path="/member-page">
+            <MemberPage />
+          </Route>
+          <Route path="/help">
+            <HelpPage />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
           </Route>
         </Switch>
       </div>
@@ -41,15 +75,3 @@ function App() {
 }
 
 export default App;
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
-function Dishes() {
-  return <h2>Dishes</h2>;
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
