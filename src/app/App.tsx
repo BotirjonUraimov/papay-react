@@ -1,7 +1,7 @@
 import "../css/App.css";
 import "../css/navbar.css";
 import "../css/footer.css";
-
+import "../css/home.css";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { RippleBadge } from "./MaterialTheme/styled";
 import React, { useState } from "react";
@@ -17,7 +17,7 @@ import HomePage from "./screens/HomePage";
 import { NavbarHome } from "./components/header";
 import { NavbarRestaurant } from "./components/header/restaurant";
 import { NavbarOthers } from "./components/header/others";
-import { Footer } from "./components/header/footer";
+import { Footer } from "./components/footer";
 
 function App() {
   const [path, setPath] = useState();
