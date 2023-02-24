@@ -9,7 +9,6 @@ import { CssVarsProvider } from "@mui/joy/styles";
 import { CardOverflow, IconButton } from "@mui/joy";
 import { Favorite } from "@mui/icons-material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export function TopRastaurants() {
   return (
@@ -20,7 +19,7 @@ export function TopRastaurants() {
           alignItems={"center"}
           sx={{ mt: "45px" }}
         >
-          <Box className="category_title">TOP Restauranlar</Box>
+          <Box className="category_title">TOP Restaurantlar</Box>
           <Stack sx={{ mt: "43px" }} flexDirection={"row"} m={"16px"}>
             <CssVarsProvider>
               <Card
@@ -113,7 +112,7 @@ export function TopRastaurants() {
                 }}
               >
                 <CardCover>
-                  <img src="/restaurant/simple.png" loading="lazy" alt="" />
+                  <img src="/restaurant/simple_2.png" loading="lazy" alt="" />
                 </CardCover>
                 <CardCover
                   sx={{
@@ -270,12 +269,12 @@ export function TopRastaurants() {
                 sx={{
                   minHeight: "430px",
                   minwidth: 325,
-                  mr: "35px",
+                  // mr: "35px",
                   cursor: "pointer",
                 }}
               >
                 <CardCover>
-                  <img src="/restaurant/simple.png" loading="lazy" alt="" />
+                  <img src="/restaurant/simple_2.png" loading="lazy" alt="" />
                 </CardCover>
                 <CardCover
                   sx={{
