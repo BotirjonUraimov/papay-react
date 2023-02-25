@@ -2,12 +2,11 @@ import "../css/App.css";
 import "../css/navbar.css";
 import "../css/footer.css";
 import "../css/home.css";
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
-import { RippleBadge } from "./MaterialTheme/styled";
+
 import React, { useState } from "react";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import RestaurantPage from "./screens/RestaurantPage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { RestaurantPage } from "./screens/RestaurantPage";
 import CommunityPage from "./screens/CommunityPage";
 import OrderPage from "./screens/OrdersPage";
 import MemberPage from "./screens/MemberPage";
