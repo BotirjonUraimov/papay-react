@@ -404,6 +404,8 @@
   font-size: 16px;
   line-height: 26px;
   color: #000000;
+  padding-top: 6px;
+  margin-left: 8px;
 }
 
 .homepage .article_cook {
@@ -452,4 +454,10 @@
   line-height: 27px;
   margin-bottom: 11px;
   color: #000000;
+}
+.homepage .tofix {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
 }
