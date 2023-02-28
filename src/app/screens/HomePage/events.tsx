@@ -55,7 +55,7 @@ export function Events() {
           <Box className="events_text">
             <span className="category_title">Hodisalar</span>
           </Box>
-          <Box className="prev_next_frame">
+          <Box className="prev_next_frame  ">
             <img
               src="/icons/arrowright.svg"
               className={"swiper_button_prev"}
