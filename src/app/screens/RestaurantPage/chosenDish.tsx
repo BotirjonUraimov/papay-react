@@ -78,7 +78,7 @@ export function ChosenDish() {
             <strong className={"dish_txt"}>To'y oshi</strong>
             <span className={"resto_name"}>Chinor</span>
             <Box className={"rating_box"}>
-              <Rating name="half-rating" defaultValue={3.5} precision={0.5} />
+              <Rating name="half-rating" defaultValue={3} precision={0.5} />
               <div className="evaluation_box">
                 <div
                   style={{
@@ -92,7 +92,7 @@ export function ChosenDish() {
                     icon={<FavoriteBorder />}
                     checkedIcon={<Favorite style={{ color: "red" }} />}
                     /* @ts-ignore */
-                    checked={false}
+                    checked={true}
                   />
 
                   <span>98</span>
