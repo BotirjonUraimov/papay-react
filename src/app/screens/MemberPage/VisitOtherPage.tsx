@@ -45,7 +45,7 @@ export function VisitOtherPage(props: any) {
                 <TabPanel value={"3"}>
                   <Box className={"menu_name"}>Following</Box>
                   <Box className={"menu_content"}>
-                    <TViewer text={`<h3>Hello</h3>`} />
+                    <MemberFollowing actions_enabled={false} />
                   </Box>
                 </TabPanel>
 
