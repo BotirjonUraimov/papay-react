@@ -17,7 +17,7 @@ export default function CommunityPage(props: any) {
   const [value, setValue] = React.useState("1");
 
   /** HANDLERS **/
-  const handleChange = (event: any, newValue: string) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
   const handlePaginationChange = (event: any, value: number) => {
