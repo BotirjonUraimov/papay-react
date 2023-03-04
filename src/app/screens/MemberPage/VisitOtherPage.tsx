@@ -12,10 +12,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import TViewer from "../../components/tuiEditor/TViewer";
 
 export function VisitOtherPage(props: any) {
   /** INITIALIZATIONS **/
-  const [value, setValue] = useState("5");
+  const [value, setValue] = useState("1");
 
   /** HANDLERS **/
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -38,13 +39,13 @@ export function VisitOtherPage(props: any) {
                 <TabPanel value={"2"}>
                   <Box className={"menu_name"}>Followers</Box>
                   <Box className={"menu_content"}>
-                    <MemberFollowers actions_enabled={true} />
+                    <MemberFollowers actions_enabled={false} />
                   </Box>
                 </TabPanel>
                 <TabPanel value={"3"}>
                   <Box className={"menu_name"}>Following</Box>
                   <Box className={"menu_content"}>
-                    <MemberFollowing actions_enabled={false} />
+                    <TViewer text={`<h3>Hello</h3>`} />
                   </Box>
                 </TabPanel>
 

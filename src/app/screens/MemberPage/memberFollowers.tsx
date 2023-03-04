@@ -4,9 +4,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 
 const followers = [
-  { mb_nick: "botir", following: true },
-  { mb_nick: "jonibek", following: false },
-  { mb_nick: "larisa", following: true },
+  { mb_nick: "Harry", following: true },
+  { mb_nick: "Harmeona", following: false },
+  { mb_nick: "Ron Uesly", following: true },
 ];
 
 export function MemberFollowers(props: any) {
