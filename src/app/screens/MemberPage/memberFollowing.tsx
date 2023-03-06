@@ -5,9 +5,9 @@ import Button from "@mui/material/Button";
 import { Dispatch } from "@reduxjs/toolkit";
 
 const followings = [
-  { mb_nick: "Pf. Dambeldor" },
-  { mb_nick: "Lili" },
-  { mb_nick: "Whon" },
+  { mb_nick: "Jonh" },
+  { mb_nick: "Ali" },
+  { mb_nick: "Mic" },
 ];
 
 export function MemberFollowing(props: any) {
